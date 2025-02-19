@@ -1,8 +1,8 @@
 import { createElement } from "react";
 
-import { HelloWorldSample } from "./components/HelloWorldSample";
+import { ModelContainer } from "./components/ModelContainer";
 import "./ui/ARModelViewer.css";
 
 export function ARModelViewer({ sampleText }) {
-    return <HelloWorldSample sampleText={sampleText} />;
+    return <ModelContainer sampleText={sampleText} />;
 }
