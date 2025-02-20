@@ -4,14 +4,22 @@
         xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>ARModel Viewer</name>
-    <description>My widget description</description>
+    <description/>
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
-            </property>
+             <propertyGroup caption="Control">
+                <property key="width" type="expression" defaultValue="'100%'" required="true">
+                    <caption>Width</caption>
+                    <description/>
+                    <returnType type="String" />
+                </property>
+                <property key="height" type="expression" defaultValue="'100%'" required="true">
+                    <caption>Height</caption>
+                    <description/>
+                    <returnType type="String" />
+                </property>
+            </propertyGroup>
         </propertyGroup>
     </properties>
 </widget>
