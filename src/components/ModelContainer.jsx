@@ -5,8 +5,8 @@ export function ModelContainer() {
     return (
         <div className="model-viewer-container" style={{ height: "500px", width: "100%" }}>
             <model-viewer
-                src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                src="https://hunter-koppen.github.io/files/warmtepomp__panasonic_wc05h3e5.glb"
+                ios-src="https://hunter-koppen.github.io/files/Warmtepomp__Panasonic_WC05H3E5.usdz"
                 alt="A 3D model of an astronaut"
                 ar
                 camera-controls
