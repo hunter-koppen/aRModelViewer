@@ -1,22 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget id="kobeon.armodelviewer.ARModelViewer" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
-        supportedPlatform="Web"
-        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="kobeon.armodelviewer.ARModelViewer"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
     <name>ARModel Viewer</name>
-    <description/>
-    <icon/>
+    <description />
+    <icon />
     <properties>
         <propertyGroup caption="General">
-             <propertyGroup caption="Control">
+            <propertyGroup caption="Model">
+                <property key="modelUrl" type="expression" required="true">
+                    <caption>Model URL</caption>
+                    <description>The URL of the model. This is used for AR mode on Android devices.</description>
+                    <returnType type="String" />
+                </property>
+                <property key="iosModelUrl" type="expression" required="true">
+                    <caption>iOS Model URL</caption>
+                    <description>The URL of the iOS model. This is used for AR mode on iOS devices.</description>
+                    <returnType type="String" />
+                </property>
+                <property key="modelAlt" type="expression" required="true">
+                    <caption>Model Alt</caption>
+                    <description>The alt description of the model.</description>
+                    <returnType type="String" />
+                </property>
+                <property key="loadingContent" type="widgets" required="false">
+                    <caption>Loading content</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Control">
                 <property key="width" type="expression" defaultValue="'100%'" required="true">
                     <caption>Width</caption>
-                    <description/>
+                    <description />
                     <returnType type="String" />
                 </property>
                 <property key="height" type="expression" defaultValue="'100%'" required="true">
                     <caption>Height</caption>
-                    <description/>
+                    <description />
                     <returnType type="String" />
                 </property>
             </propertyGroup>
