@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="kobeon.armodelviewer.ARModelViewer"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
+<widget id="kobeon.armodelviewer.ARModelViewer" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
     xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>ARModel Viewer</name>
     <description />
     <icon />
@@ -45,6 +38,25 @@
                     <caption>Height</caption>
                     <description />
                     <returnType type="String" />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Actions">
+                <property key="openARView" type="attribute" required="false">
+                    <caption>Open AR View</caption>
+                    <description>Toggle boolean to true open AR viewer, only works if AR is available on the device (mobile devices).</description>
+                    <attributeTypes>
+                        <attributeType name="Boolean"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Customization">
+                <property key="customArButton" type="boolean" defaultValue="false">
+                    <caption>Custom AR Button</caption>
+                    <description/>
+                </property>
+                <property key="arButtonContent" type="widgets" required="false">
+                    <caption>AR Button</caption>
+                    <description>Note: This is only visible if the AR is available on the device (mobile devices).</description>
                 </property>
             </propertyGroup>
         </propertyGroup>
