@@ -52,7 +52,11 @@ export const ModelContainer = ({
                     auto-rotate
                     style={{ width: "100%", height: "100%" }}
                 >
-                    {shouldShowArButton && <button slot="ar-button">{arButtonContent}</button>}
+                    {shouldShowArButton && (
+                        <button slot="ar-button" className="ar-button">
+                            {arButtonContent}
+                        </button>
+                    )}
                 </model-viewer>
             ) : (
                 <div className="model-loading">{loadingContent}</div>
