@@ -52,11 +52,11 @@
             <propertyGroup caption="Customization">
                 <property key="customArButton" type="boolean" defaultValue="false">
                     <caption>Custom AR Button</caption>
-                    <description/>
+                    <description>Note: The button is only visible if AR is available on the device (mobile devices).</description>
                 </property>
                 <property key="arButtonContent" type="widgets" required="false">
                     <caption>AR Button</caption>
-                    <description>Note: This is only visible if the AR is available on the device (mobile devices).</description>
+                    <description/>
                 </property>
             </propertyGroup>
         </propertyGroup>
